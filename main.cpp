@@ -49,18 +49,18 @@ void printMoves(int* pos){
     int i;
     printf("{");
     for(i = 0; pos[i + 1] != -1; i++){
-        printf("%d, ");
+        printf("%d, ",pos[i]);
     }
-    printf("%d}\n");
+    printf("%d}\n", pos[i]);
 }
 
 void writeMoves(FILE* ptr, int* pos){
     int i;
     printf("{");
     for(i = 0; pos[i + 1] != -1; i++){
-        printf("%d, ");
+        printf("%d, ", pos[i]);
     }
-    printf("%d}\n");
+    printf("%d}\n", pos[i]);
 }
 
 void generateMoves(char* moves, int index, int p, int final, FILE* ptr, int* pos){
